@@ -1,24 +1,13 @@
 using namespace std;
 #include <iostream>
-int addition()
-{
+int main(){
 	int a,b,c;
-	cout<<"inter a :";
+	cout<<"inter value of a:";
 	cin>>a;
-	cout<<"inter b :";
+	cout<<"inter value of b:";
 	cin>>b;
-	c=a+b;
-	return c;
+	c=a-b;
+	cout<<"arithmatic of a and b ="<<c;
 	
-}
-int main()
-{
-	int add;
-	add=addition();
-	cout<<endl<<"sum :"<<add;
 	return 0;
-	
-	
 }
-
- 

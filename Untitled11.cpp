@@ -1,43 +1,37 @@
-//question (2nd)
 using namespace std;
-#include <cstdlib>
 #include <iostream>
-#include <ctime>
-int main()
-
-{
-	int n,r;
-	srand(time(0));
-	{
-	
-		r=rand()%10;
-    }
-	
-	cout<<"inter guess value :";
-	cin>>n;
-		
-		
-	while(r!=n)
-	{
-		if(n<r)
-		{
-			cout<<"inter value too low,try again"<<endl;
-			cout<<"inter value  :";
-	        cin>>n;
-				
+ class addition
+ {
+    public:
+ 		add(int a,int b)
+ 		{
+ 			
+ 		    cout<<"sum of a and b : "<<(a+b)<<endl;
+ 			
 		}
-		else
+ };
+ class subtraction
+ {
+ 	public:
+ 	    sub(int a,int b)
 		{
-			cout<<"inter value too high,try again"<<endl;
-			cout<<"inter value  :";
-	        cin>>n;
+			
+			cout<<"sub of a and b : "<<(a-b)<<endl;
 		}
-    }
-    if(r==n)
-    {
-    	cout<<endl<<"Excellent!,you guessed the number";
-	}
-}
-
-		
-
+			
+ };
+ class detail:public subtraction,public addition
+ {
+ 	
+ };
+ main()
+ {
+ 	int x,y;
+ 	cout<<"inter 1st value :";
+ 	cin>>x;
+ 	cout<<"inter 2nd value :";
+ 	cin>>y;
+ 	detail d;		
+ 	d.add(x,y);
+ 	d.sub(x,y);
+ }
